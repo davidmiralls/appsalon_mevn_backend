@@ -1,0 +1,19 @@
+{
+  "name": "appsalon_mevn_backend",
+  "version": "1.0.0",
+  "description": "Backend para AppSalon en MEVN",
+  "license": "ISC",
+  "author": "David Miralles Gil",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "seed:import": "node data/seed.js ---import",
+    "seed:destroy": "node data/seed.js ---destroy"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
+  }
+}
