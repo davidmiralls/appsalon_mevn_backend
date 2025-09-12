@@ -12,7 +12,7 @@ const authMiddleware = async (req, res, next)=>{
                 "-password -verified -token -__v"
             )
             
-            next()
+           return next()
 
         } catch  {
         const error = new Error('Token no válido')
@@ -24,7 +24,7 @@ const authMiddleware = async (req, res, next)=>{
         res.status(403).json({msg: error.message})
     }
 
-    next()
+    
 }
 
 export default authMiddleware

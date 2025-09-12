@@ -6,6 +6,7 @@ import cors from 'cors'
 import { db } from './config/db.js'
 import servicesRoutes from './routes/servicesRoutes.js'
 import authRoutes from './routes/authRoutes.js'
+import appointmentRoutes from './routes/appointmentRoutes.js'
 
 
 
@@ -46,6 +47,7 @@ app.use(cors(corsOptions))
 //definir una ruta
 app.use('/api/services', servicesRoutes)
 app.use('/api/auth', authRoutes)
+app.use('/api/appointments', appointmentRoutes)
 
 
 
